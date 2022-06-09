@@ -2,8 +2,9 @@ Bootstrap: docker
 From: r-base
 
 %post
-
+apt-get update
 apt-get install -y \
+procps \
 libcurl4-openssl-dev \
 libfontconfig1-dev \
 libxml2 \
@@ -18,10 +19,10 @@ wget
 
 Rscript -e "install.packages('BiocManager')"
 Rscript -e "BiocManager::install(c(\
-    'tidyverse', \
-	'stringr', \
-	'biovizBase', \
-	'GenomicRanges', \
-    'ggbio', \
-    'knitr' \
-    ))"
+'tidyverse', \
+'stringr', \
+'biovizBase', \
+'GenomicRanges', \
+'ggbio', \
+'knitr' \
+))"

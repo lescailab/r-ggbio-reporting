@@ -1,6 +1,8 @@
 FROM r-base
 
+RUN apt-get update
 RUN apt-get install -y \
+procps \
 libcurl4-openssl-dev \
 libfontconfig1-dev \
 libxml2 \
