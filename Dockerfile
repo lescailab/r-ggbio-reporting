@@ -13,7 +13,10 @@ libclang-dev \
 liblzma-dev \
 python3 \
 python3-pip \
-wget
+wget \
+make \
+gcc \
+pandoc
 
 RUN Rscript -e "install.packages('BiocManager')"
 
