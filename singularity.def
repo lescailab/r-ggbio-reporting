@@ -1,0 +1,14 @@
+Bootstrap: docker
+From: r-base
+
+% post
+
+Rscript -e "install.packages('BiocManager')"
+Rscript -e "BiocManager::install(c(\
+    'tidyverse', \
+	'stringr', \
+	'biovizBase', \
+	'GenomicRanges', \
+    'ggbio', \
+    'knitr' \
+    ))"
