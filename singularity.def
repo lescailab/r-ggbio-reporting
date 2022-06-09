@@ -18,6 +18,7 @@ python3-pip \
 wget \
 make \
 gcc \
+openssl-devel \
 pandoc
 
 Rscript -e "install.packages('BiocManager')"
